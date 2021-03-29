@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结算清单</title>
+    <style>
+        .shopping-list {
+            border: 1px dotted #c8c8c8;
+            border-bottom: unset;
+        }
+
+        .good {
+            display: flex;
+            padding: 6px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dotted #c8c8c8;
+        }
+
+
+        .good-info,
+        .good-price,
+        .good-number {
+            width: 30%;
+            text-align: center;
+        }
+
+        .good-total {
+            width: 10%;
+            text-align: center;
+        }
+
+        .good-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .good-image {
+            width: 84px;
+            height: 84px;
+        }
+
+        .total {
+            float: right;
+            margin: 12px 0 0;
+        }
+
+        .add-btn {
+            float: left;
+            margin: 12px 0 0;
+        }
+
+        .add-btn>.add-good-btn {
+            padding: 6px;
+            background-color: rgb(255, 144, 124);
+            border: 1px solid #a2a2a2;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 108px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shopping-list">
+        <div class="good"></div>
+    </div>
+    <div class="total">
+        <span>总价：￥</span>
+        <span class="total-price">81</span>
+    </div>
+    <div class="add-btn">
+        <div class="add-good-btn">添加货品</div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./view.js"></script>
+    <script src="./addGood.js"></script>
+</body>
+
+</html>
